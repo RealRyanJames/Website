@@ -17,6 +17,7 @@ func main() {
 	client := gin.Default()
 
 	client.LoadHTMLGlob("templates/*")
+	client.Static("/static", "./static")
 
 	f.Function = func() string {
 		return "Hello World"
