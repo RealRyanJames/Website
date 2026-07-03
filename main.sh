@@ -9,6 +9,8 @@ if $dev; then
     
         isProd = 0
         
+        tsc main.ts
+
         git add .
         git commit -m "Added Initial Button Code"
         git push
