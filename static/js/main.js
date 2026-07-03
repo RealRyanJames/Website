@@ -3,12 +3,12 @@ function addedClickableButton() {
     const button = document.getElementById("button");
     const text = document.getElementById("text");
     setButton(button, text);
-    changeTextClickable();
+    // changeTextClickable();
 }
-function changeTextClickable() {
-    const text = document.getElementById("yearsCoding");
-    text.textContent = `Coding For ${2026 - 2020}`;
-}
+// function changeTextClickable() {
+//   const text = document.getElementById("yearsCoding") as HTMLElement;
+//   text.textContent = `Coding For ${2026 - 2020}`;
+// }
 function setButton(btn, text) {
     btn.addEventListener("click", () => {
         text.textContent = `Coding For ${2026 - 2020}`;
