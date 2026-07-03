@@ -4,6 +4,14 @@ function addedClickableButton() {
   button.addEventListener("click", () => {
     text.textContent = `Coding For ${2026 - 2020} Years`;
   });
+
+  text.addEventListener("mouseover", () => {
+    addTextOver(text);
+  });
+}
+
+function addTextOver(text: HTMLElement) {
+  text.textContent = `Coding For ${2026 - 2020} Years`;
 }
 
 // function changeTextClickable() {
