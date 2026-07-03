@@ -4,6 +4,11 @@ function addedClickableButton() {
   setButton(button, text);
 }
 
+function changeTextClickable() {
+  const text = document.getElementById("yearsCoding") as HTMLElement;
+  text.textContent = `Coding For ${2026 - 2020}`;
+}
+
 function setButton(btn: HTMLButtonElement, text: HTMLElement) {
   return btn.addEventListener("click", () => {
     text.textContent = `Coding For ${2026 - 2020}`;
