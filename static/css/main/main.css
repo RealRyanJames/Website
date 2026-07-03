@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(13, 22, 33);
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 300px;
+  font-size: 27px;
+  font-family: sans-serif;
+}
+
+h1::hover {
+  transition: all 0.5s ease-in-out;
+}

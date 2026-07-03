@@ -1,14 +1,25 @@
 "use strict";
-function addedClickableButton() {
-    const button = document.getElementById("button");
-    const text = document.getElementById("text");
-    button.addEventListener("click", () => {
-        text.textContent = `Coding For ${2026 - 2020} Years`;
-    });
-    text.addEventListener("mouseover", () => {
-        addTextOver(text);
-    });
-}
+window.onload = () => {
+    function getColorHandler() {
+        return ["red", "green", "blue"];
+    }
+    function addedClickableButton() {
+        const button = document.getElementById("button");
+        const text = document.getElementById("text");
+        button.addEventListener("click", () => {
+            text.textContent = `Coding For ${2026 - 2020} Years`;
+        });
+        const colors = getColorHandler();
+        let color = ["red", "green", "blue"];
+        const randomColor = Math.floor(Math.random() * color.length);
+        const colorWindow = color[randomColor];
+        text.style.color = colorWindow;
+        text.addEventListener("mouseover", () => {
+            addTextOver(text);
+        });
+    }
+    addedClickableButton();
+};
 function addTextOver(text) {
     text.textContent = `Coding For ${2026 - 2020} Years`;
 }
@@ -16,4 +27,3 @@ function addTextOver(text) {
 //   const text = document.getElementById("yearsCoding") as HTMLElement;
 //   text.textContent = `Coding For ${2026 - 2020}`;
 // }
-addedClickableButton();
