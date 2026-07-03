@@ -15,3 +15,5 @@ function setButton(btn: HTMLButtonElement, text: HTMLElement) {
     text.textContent = `Coding For ${2026 - 2020}`;
   });
 }
+
+addedClickableButton();
