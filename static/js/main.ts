@@ -2,6 +2,7 @@ function addedClickableButton() {
   const button = document.getElementById("button") as HTMLButtonElement;
   const text = document.getElementById("text") as HTMLElement;
   setButton(button, text);
+  changeTextClickable();
 }
 
 function changeTextClickable() {

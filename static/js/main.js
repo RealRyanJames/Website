@@ -3,6 +3,7 @@ function addedClickableButton() {
     const button = document.getElementById("button");
     const text = document.getElementById("text");
     setButton(button, text);
+    changeTextClickable();
 }
 function changeTextClickable() {
     const text = document.getElementById("yearsCoding");
