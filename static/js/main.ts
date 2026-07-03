@@ -11,7 +11,7 @@ function changeTextClickable() {
 }
 
 function setButton(btn: HTMLButtonElement, text: HTMLElement) {
-  return btn.addEventListener("click", () => {
+  btn.addEventListener("click", () => {
     text.textContent = `Coding For ${2026 - 2020}`;
   });
 }
